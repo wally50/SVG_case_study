@@ -4,13 +4,11 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon1.png" type="image/x-icon" />
-
-
     <title>SVG</title>
   </head>
   <body>
 
-    <div class="svg1">
+    <div class="svg1 container">
       <svg version="1.1"
          baseProfile="full"
          width="300" height="200"
@@ -19,20 +17,24 @@
         <circle cx="150" cy="100" r="80" fill="green" />
         <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
       </svg>
+      <h5>logo generated from rectangle, circle and text paths</h5>
+      <h5>and filled with red green and white</h5>
     </div>
 
-    <div class="svg2">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg"   xmlns:xlink="http://www.w3.org/1999/xlink">
+    <div class="svg2 container">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg"   xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="300" height="200">
         <defs>
           <clipPath id="cut-off-bottom">
-            <rect x="0" y="0" width="200" height="100" />
+            <rect x="50" y="0" width="200" height="100" />
           </clipPath>
         </defs>
-        <circle cx="100" cy="100" r="100" clip-path="url(#cut-off-bottom)" fill="blue" />
+        <circle cx="150" cy="100" r="100" clip-path="url(#cut-off-bottom)" fill="blue" />
       </svg>
+      <h5> circle clipped with a rectangle and filled blue</h5>
     </div>
 
-    <div class="svg3">
+    <div class="svg3 container">
       <svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
         <path d="M10 315
            L 110 215
@@ -41,53 +43,68 @@
            A 30 50 -45 0 1 215.1 109.9
            L 315 10" stroke="black" fill="green" stroke-width="2" fill-opacity="0.5"/>
       </svg>
+      <h5>lines and arcs filled green</h5>
     </div>
 
-    <div class="svg4">
-      <svg width="200" height="150" xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <rect height="100" width="100" id="MyRect"/>
+    <div class="svg4 container">
+      <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="50" height="100" width="100" id="MyRect"/>
       </svg>
+      <h5>rectangle with CSS color change on hover</h5>
     </div>
 
-    <div class="svg5">
-      <svg width="300px" height="100px">
-        <rect id="rect3" x="50" y="10" width="60" height="60" fill="blue" onmouseover="MakeTransparent(evt)" onmouseout="MakeOpaque(evt)"/>
-        <rect id="rect4" x="150" y="10" width="60" height="60" fill="green" onmouseover="MakeTransparent(evt)" onmouseout="MakeOpaque(evt)"/>
+    <div class="svg5 container">
+      <svg width="300px" height="80px">
+        <rect id="rect3" x="60" y="10" width="60" height="60" fill="blue" onmouseover="MakeTransparent(evt)" onmouseout="MakeOpaque(evt)"/>
+        <rect id="rect4" x="180" y="10" width="60" height="60" fill="green" onmouseover="jump(evt)" onmouseout="jumpBack(evt)"/>
       </svg>
+      <h5>two rectangle with svg inline function calls</h5>
     </div>
 
-    <div class="svg6">
+    <div class="svg6 container">
       <svg width="300px" height="100px">
         <rect id="rect1" x="0" y="0" width="300" height="100" fill="green" stroke="black" stroke-width="1" />
         <circle cx="0" cy="50" r="15" fill="blue" stroke="black" stroke-width="1">
           <animate attributeName="cx" values="0;300;0" dur="6s" repeatCount="indefinite" />
         </circle>
       </svg>
+      <h5>filled rectangle with filled circle </h5>
+      <h5>animation within svg decription</h5>
     </div>
 
-    <div class="svg7">
+    <div class="svg7 container">
         <object id="range" stype="image/svg+xml" data="range1.svg" width="300" height="200">
         </object>
     </div>
 
-    <div class="svg8">
+    <div class="svg8 container" onclick="makeLightning()">
       <svg xmlns="http://www.w3.org/2000/svg" width="800" height="100%" backgroundcolor="mistyrose">
+        <path id="cloud3" class="hidden" d="M0 0v660h800V0z" fill="#808080" fill-rule="evenodd" stroke="#808080"/>
         <path id="range6" d="M0 470c360-70 420-90 570-80s70 0 150 10l80 10v290H0z" fill="#e6e6e6" fill-rule="evenodd" stroke="#e6e6e6"/>
         <path id="range5" d="M0 440c80-90 240-90 420-40s150 40 180 50 200 60 200 60v190H0V440z" fill="#ccc" fill-rule="evenodd" stroke="#ccc"/>
         <path id="range4" d="M0 460c120-80 120-60 200-30s80 40 180 10 80-70 170-60 50 30 150 50l100 20v250H0z" fill="#b3b3b3" fill-rule="evenodd" stroke="#b3b3b3"/>
         <path id="range3" d="M0 510c390-160 800 0 800 0v190H0z" fill="#999" fill-rule="evenodd" stroke="#999"/>
         <path id="range2" d="M0 520c140-50 170-140 240-60s140 50 230-10 330 30 330 30v220H0V520z" fill="#666" fill-rule="evenodd" stroke="#666"/>
         <path id="range1" d="M0 500c30-100 80-60 110-10s70 70 130 10 40-80 170 0 150-50 260-60 130 40 130 40v220H0V500z" fill="#333" fill-rule="evenodd" stroke="#333"/>
-
+        <path id="cloud2" class="hidden" d="M0 90c290 60 290-20 460 10s340-20 340-20V0H0z" fill="#666666" fill-rule="evenodd" stroke="#666666"/>
+        <path id="lightning" class="hidden" d="M500 0l-80 130h20L340 280h20l-70 110 110-130h-20l110-160h-20L540 0h-40zM240 0l-40 50h20l-30 40h20l-20 40 40-50h-20l30-40 10 30h10l20 30-10-40h-10l-10-30h-10l30-30h-30z" fill="#fff" fill-rule="evenodd" stroke="#fff"/>
+        <path id="cloud1" class="hidden" d="M0 30c150 50 120-40 260-10s100-40 260 0 200-10 240 0l40 10V0H0z" fill="#333333" fill-rule="evenodd" stroke="#333333"/>
       </svg>
     </div>
+
     <div class="spacer"></div>
-    <div id="svg-9">
+    <div id="svg-9" class="container">
     </div>
+
     <div class="spacer"></div>
+
     <h4>The journey continues .......</h4>
+
     <script type="text/javascript" src="svg.js"></script>
-    <script src="../p5.min.js"></script>
+    <script src="../p5.js"></script>
+    <!-- <script src="../p5.min.js"></script> -->
+    <!-- <script src="../p5.svg.js"></script> -->
+
     <script src="../addons/p5.dom.min.js"></script>
     <script src="../addons/p5.sound.min.js"></script>
   </body>

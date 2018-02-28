@@ -25,6 +25,10 @@ div {
   stroke: black;
 }
 
+.container {
+  text-align: center;
+  vertical-align: middle;
+}
 
 .svg8 {
   height: 660px;
@@ -42,6 +46,39 @@ div {
   border: 2px solid green;
 }
 
+#range1:hover {
+  fill: red;
+}
+
+#range2:hover {
+  fill: orange;
+}
+
+#range3:hover {
+  fill: yellow;
+}
+
+#range4:hover {
+  fill: green;
+}
+
+#range5:hover {
+  fill: indigo;
+}
+
+#range6:hover {
+  fill: violet;
+}
+
+.hidden {
+  display: none;
+}
+
+
 h4 {
   color: red;
+}
+
+h5 {
+  color : lightblue;
 }

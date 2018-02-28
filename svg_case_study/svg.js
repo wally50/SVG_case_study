@@ -1,10 +1,48 @@
-  var MakeTransparent = function(evt) {
-    evt.target.setAttributeNS(null,"opacity","0.4");
-  }
+var MakeTransparent = function(evt) {
+  evt.target.setAttributeNS(null,"opacity","0.4");
+}
 
-  var MakeOpaque = function(evt) {
-    evt.target.setAttributeNS(null,"opacity","1");
-  }
+var MakeOpaque = function(evt) {
+  evt.target.setAttributeNS(null,"opacity","1");
+}
+
+function jump(evt) {
+  evt.target.setAttribute('y', '5');
+}
+
+function jumpBack(evt) {
+  evt.target.setAttribute('y', '10');
+}
+
+function makeLightning() {
+  console.log('light');
+  document.querySelector('#lightning').classList.toggle("hidden");
+  document.querySelector('#cloud1').classList.toggle("hidden");
+  document.querySelector('#cloud2').classList.toggle("hidden");
+  document.querySelector('#cloud3').classList.toggle("hidden");
+}
+
+
+
+
+
+
+
+
+
+// function keyPressed(evt) {
+//   if (keyCode === LEFT_ARROW) {
+//     evt.target.setAttribute('fill', 'red');
+//   } else if (keyCode === RIGHT_ARROW) {
+//     value = 0;
+//   }
+// }
+
+
+
+
+
+
 
   // All the paths
 var paths = [];
@@ -143,4 +181,4 @@ Particle.prototype.display = function(other) {
     line(this.position.x, this.position.y, other.position.x, other.position.y);
   }
 
-}  
+}
