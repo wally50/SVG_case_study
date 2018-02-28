@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon1.png" type="image/x-icon" />
+
+
     <title>SVG</title>
   </head>
   <body>
@@ -58,8 +60,7 @@
       <svg width="300px" height="100px">
         <rect id="rect1" x="0" y="0" width="300" height="100" fill="green" stroke="black" stroke-width="1" />
         <circle cx="0" cy="50" r="15" fill="blue" stroke="black" stroke-width="1">
-          <animate attributeName="cx" values="0;300;0" dur="6s" begin="rect1.mouseover"
-                end="rect1.mouseout" repeatCount="indefinite" />
+          <animate attributeName="cx" values="0;300;0" dur="6s" repeatCount="indefinite" />
         </circle>
       </svg>
     </div>
@@ -77,14 +78,17 @@
         <path id="range3" d="M0 510c390-160 800 0 800 0v190H0z" fill="#999" fill-rule="evenodd" stroke="#999"/>
         <path id="range2" d="M0 520c140-50 170-140 240-60s140 50 230-10 330 30 330 30v220H0V520z" fill="#666" fill-rule="evenodd" stroke="#666"/>
         <path id="range1" d="M0 500c30-100 80-60 110-10s70 70 130 10 40-80 170 0 150-50 260-60 130 40 130 40v220H0V500z" fill="#333" fill-rule="evenodd" stroke="#333"/>
+
       </svg>
     </div>
-
-
-
-
-  <script type="text/javascript" src="svg.js">
-
-  </script>
+    <div class="spacer"></div>
+    <div id="svg-9">
+    </div>
+    <div class="spacer"></div>
+    <h4>The journey continues .......</h4>
+    <script type="text/javascript" src="svg.js"></script>
+    <script src="../p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
   </body>
 </html>

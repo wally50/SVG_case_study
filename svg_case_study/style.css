@@ -8,6 +8,11 @@ body {
   align-items: center;
   margin: 0 auto;
   background-color: mistyrose;
+  /*background-color: #121212;*/
+}
+
+div {
+  margin-top: 30px;
 }
 
 #MyRect:hover {
@@ -21,8 +26,22 @@ body {
 }
 
 
-
 .svg8 {
   height: 660px;
   background-color: mistyrose;
+}
+
+.spaver {
+  width: 800px;
+  height:30px;
+}
+
+#svg-9 {
+  width: 600px;
+  height: 500px;
+  border: 2px solid green;
+}
+
+h4 {
+  color: red;
 }
