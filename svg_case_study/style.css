@@ -32,7 +32,7 @@ div {
 
 .svg8 {
   height: 660px;
-  background-color: mistyrose;
+  background-color: #c9e9f6;
 }
 
 .spaver {
@@ -72,6 +72,10 @@ div {
 
 .hidden {
   display: none;
+}
+
+.yellow {
+  fill: #ffffd8;
 }
 
 

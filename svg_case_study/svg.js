@@ -14,15 +14,38 @@ function jumpBack(evt) {
   evt.target.setAttribute('y', '10');
 }
 
+const r2 = document.querySelector('#range2').classList.remove("yellow");
+const r3 = document.querySelector('#range3').classList.remove("yellow");
+const r4 = document.querySelector('#range4').classList.remove("yellow");
+const r5 = document.querySelector('#range5').classList.remove("yellow");
+const r6 = document.querySelector('#range6').classList.remove("yellow");
+
 function makeLightning() {
-  console.log('light');
   document.querySelector('#lightning').classList.toggle("hidden");
   document.querySelector('#cloud1').classList.toggle("hidden");
   document.querySelector('#cloud2').classList.toggle("hidden");
   document.querySelector('#cloud3').classList.toggle("hidden");
+
+  const r2 = document.querySelector('#range2').classList.toggle("yellow");
+  const r3 = document.querySelector('#range3').classList.toggle("yellow");
+  const r4 = document.querySelector('#range4').classList.toggle("yellow");
+  const r5 = document.querySelector('#range5').classList.toggle("yellow");
+  const r6 = document.querySelector('#range6').classList.toggle("yellow");
+
+  // r2.style.fill= '#ffffd8';
+  // r3.style.fill= '#ffffd8';
+  // r4.style.fill= '#ffffd8';
+  // r5.style.fill= '#ffffd8';
+  // r6.style.fill= '#ffffd8';
+
+
+  var myVar = setInterval(myTimer, 1000);
+  function myTimer() {
+
+  }
 }
 
-
+onclick=clearInterval(myVar)
 
 
 
