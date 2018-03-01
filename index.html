@@ -19,8 +19,12 @@
         <circle cx="150" cy="100" r="80" fill="green" />
         <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
       </svg>
-      <h5>logo generated from rectangle, circle and text paths</h5>
-      <h5>and filled with red green and white</h5>
+      <h3>Logo generated from rectangle, circle and text paths</h3>
+      <h3>and filled with red green and white</h3>
+      <textarea disabled>
+        <rect width="100%" height="100%" fill="red" />
+        <circle cx="150" cy="100" r="80" fill="green" />
+        <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text></textarea>
     </div>
 
     <div class="svg2 container">
@@ -33,7 +37,7 @@
         </defs>
         <circle cx="150" cy="100" r="100" clip-path="url(#cut-off-bottom)" fill="blue" />
       </svg>
-      <h5> circle clipped with a rectangle and filled blue</h5>
+      <h3> Circle clipped with a rectangle and filled blue</h3>
     </div>
 
     <div class="svg3 container">
@@ -43,24 +47,24 @@
            A 30 50 0 0 1 162.55 162.45
            L 172.55 152.45
            A 30 50 -45 0 1 215.1 109.9
-           L 315 10" stroke="black" fill="green" stroke-width="2" fill-opacity="0.5"/>
+           L 315 10" stroke="mistyrose" fill="green" stroke-width="2" fill-opacity="0.5"/>
       </svg>
-      <h5>lines and arcs filled green</h5>
+      <h3>Lines and arcs filled green</h3>
     </div>
 
     <div class="svg4 container">
       <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg" version="1.1">
           <rect x="50" height="100" width="100" id="MyRect"/>
       </svg>
-      <h5>rectangle with CSS color change on hover</h5>
+      <h3>Rectangle with CSS color change on hover</h3>
     </div>
 
     <div class="svg5 container">
-      <svg width="300px" height="80px">
-        <rect id="rect3" x="60" y="10" width="60" height="60" fill="blue" onmouseover="MakeTransparent(evt)" onmouseout="MakeOpaque(evt)"/>
-        <rect id="rect4" x="180" y="10" width="60" height="60" fill="green" onmouseover="jump(evt)" onmouseout="jumpBack(evt)"/>
+      <svg width="300px" height="100px">
+        <rect id="rect3" x="60" y="20" width="60" height="60" fill="blue" onmouseover="MakeTransparent(evt)" onmouseout="MakeOpaque(evt)"/>
+        <rect id="rect4" x="180" y="20" width="60" height="60" fill="green" onmouseover="jump(evt)" onmouseout="jumpBack(evt)"/>
       </svg>
-      <h5>two rectangle with svg inline function calls</h5>
+      <h3>two rectangle with svg inline function calls</h3>
     </div>
 
     <div class="svg6 container">
@@ -70,13 +74,77 @@
           <animate attributeName="cx" values="0;300;0" dur="6s" repeatCount="indefinite" />
         </circle>
       </svg>
-      <h5>filled rectangle with filled circle </h5>
-      <h5>animation within svg decription</h5>
+      <h3>Filled rectangle with a filled circle </h3>
+      <h3>animation within svg decription</h3>
     </div>
 
     <div class="svg7 container">
-        <object id="range" stype="image/svg+xml" data="range1.svg" width="300" height="200">
-        </object>
+      <object id="range" stype="image/svg+xml" data="./svg_case_study/range1.svg" width="300" height="200">
+      </object>
+      <h3></h3>
+    </div>
+
+    <div class="svg7a container">
+      <svg width="800px" height="800px">
+        <path  id="star"
+          d="M 15.000 20.000
+          L 20.000 23.660
+          L 19.330 17.500
+          L 25.000 15.000
+          L 19.330 12.500
+          L 20.000 6.340
+          L 15.000 10.000
+          L 10.000 6.340
+          L 10.670 12.500
+          L 5.000 15.000
+          L 10.670 17.500
+          L 10.000 23.660
+          z
+          "stroke="green" fill="blue" stroke-width="1" transform="scale(0.5)"/>
+          <animate
+             xlink:href="#star"
+             attributeName="transform"
+             type="scale"
+             from="1"
+             to="25"
+             dur="5s"
+             begin="0s"
+             values="1; 5; 10; 20"
+             keyTimes="0; 0.2; 0.3; 1"
+             repeatCount="indefinite"
+             fill="freeze"
+             id="star-anim"/>
+        <!-- <path  id="star1"
+          d="M 15.000 20.000
+          L 20.000 23.660
+          L 19.330 17.500
+          L 25.000 15.000
+          L 19.330 12.500
+          L 20.000 6.340
+          L 15.000 10.000
+          L 10.000 6.340
+          L 10.670 12.500
+          L 5.000 15.000
+          L 10.670 17.500
+          L 10.000 23.660
+          z
+          "stroke="green" fill="blue" stroke-width="1" transform="scale(30)"/> -->
+          <!-- <animate attributeName="cx" values="0;300;0" dur="6s" repeatCount="indefinite" /> -->
+        <!-- <path  d="
+          M 10.000 15.000
+          L 15.878 18.090
+          L 14.755 11.545
+          L 19.511 6.910
+          L 12.939 5.955
+          L 10.000 0.000
+          L 7.061 5.955
+          L 0.489 6.910
+          L 5.245 11.545
+          L 4.122 18.090
+          L 10.000 15.000
+          "/> -->
+      </svg>
+
     </div>
 
     <div class="svg8 container" onclick="makeLightning()">
@@ -110,6 +178,9 @@
            fill="freeze"
            id="lightning-anim"/>
       </svg>
+      <h3>Individual elements created on Inkscape vector graphics editor,</h3>
+      <h3>passed through SVGOMG to simplify path strings,</h3>
+      <h3>elements built up within svg tags and effects added.</h3>
     </div>
 
     <div class="spacer"></div>

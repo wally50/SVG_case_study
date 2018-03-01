@@ -7,12 +7,23 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  /*background-color: mistyrose;*/
-  background-color: #121212;
+  background-color: mistyrose;
+  /*background-color: #121212;*/
+}
+
+textarea {
+  width: 800px;
+  height: 60px;
 }
 
 div {
-  margin-top: 30px;
+  margin-top: 80px;
+}
+
+div .svg7 {
+  width: 300px;
+  height: 200px;
+  background-color: mistyrose;
 }
 
 #MyRect:hover {
@@ -86,6 +97,6 @@ h4 {
   color: red;
 }
 
-h5 {
+h3 {
   color : lightblue;
 }

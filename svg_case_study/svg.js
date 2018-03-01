@@ -1,5 +1,5 @@
 var MakeTransparent = function(evt) {
-  evt.target.setAttributeNS(null,"opacity","0.4");
+  evt.target.setAttributeNS(null,"opacity","0.3");
 }
 
 var MakeOpaque = function(evt) {
@@ -11,7 +11,7 @@ function jump(evt) {
 }
 
 function jumpBack(evt) {
-  evt.target.setAttribute('y', '10');
+  evt.target.setAttribute('y', '20');
 }
 
 const r2 = document.querySelector('#range2').classList.remove("yellow");
