@@ -61,14 +61,7 @@ function makeLightning() {
 //   }
 // }
 
-function draw() {
-  if (mouseIsPressed) {
-    fill('blue');
-  } else {
-    fill('red');
-  }
-  ellipse(mouseX, mouseY, 40, 40);
-}
+
 
 
 
@@ -84,6 +77,10 @@ function draw() {
 // var current;
 // var previous;
 //
+
+
+// Canvas for drawing cicles ---- still need to set up for SVG file return
+
 //   function setup() {
 //     var canvas = createCanvas(600, 500);
 //     canvas.style.position = "absolute";
@@ -93,7 +90,21 @@ function draw() {
 //     previous = createVector(0,0);
 //   }
 //
+// function draw() {
+//   if (mouseIsPressed) {
+//     fill('blue');
+//   } else {
+//     fill('red');
+//   }
+//   ellipse(mouseX, mouseY, 40, 40);
+// }
+
+// #####################################################
 //
+//
+
+//  for drwing vector lines which fade on canvas above not returning svg as yet
+
 //   function draw() {
 //   background(200);
 //

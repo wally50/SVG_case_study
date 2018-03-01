@@ -7,8 +7,8 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background-color: mistyrose;
-  /*background-color: #121212;*/
+  /*background-color: mistyrose;*/
+  background-color: #121212;
 }
 
 div {
@@ -31,6 +31,7 @@ div {
 }
 
 .svg8 {
+  border: 3px solid gold;
   height: 660px;
   background-color: #c9e9f6;
 }
@@ -40,11 +41,13 @@ div {
   height:30px;
 }
 
-#svg-9 {
+/*for canvas div border, not in use currently*/
+
+/*#svg-9 {
   width: 600px;
   height: 500px;
   border: 2px solid green;
-}
+}*/
 
 #range1:hover {
   fill: red;

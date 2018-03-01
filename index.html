@@ -81,6 +81,12 @@
 
     <div class="svg8 container" onclick="makeLightning()">
       <svg xmlns="http://www.w3.org/2000/svg" width="800" height="100%" backgroundcolor="mistyrose">
+        <defs>
+          <filter id="blurFilter7" x="-20" y="-20" width="200" height="200">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+          </filter>
+        </defs>
+        <circle id="sun" cx="695" cy="166.792" r="15" fill="#ffe680" stroke="#ffe680" transform="translate(0 -111.792)" style="filter: url(#blurFilter7);"/>
         <path id="cloud3" class="hidden" d="M0 0v660h800V0z" fill="#808080" fill-rule="evenodd" stroke="#808080"/>
         <path id="range6" class="yellow" d="M0 470c360-70 420-90 570-80s70 0 150 10l80 10v290H0z" fill="#e6e6e6" fill-rule="evenodd" stroke="#e6e6e6"/>
         <path id="range5" class="yellow" d="M0 440c80-90 240-90 420-40s150 40 180 50 200 60 200 60v190H0V440z" fill="#ccc" fill-rule="evenodd" stroke="#ccc"/>
@@ -91,6 +97,18 @@
         <path id="cloud2" class="hidden" d="M0 90c290 60 290-20 460 10s340-20 340-20V0H0z" fill="#666666" fill-rule="evenodd" stroke="#666666"/>
         <path id="lightning" class="hidden" d="M500 0l-80 130h20L340 280h20l-70 110 110-130h-20l110-160h-20L540 0h-40zM240 0l-40 50h20l-30 40h20l-20 40 40-50h-20l30-40 10 30h10l20 30-10-40h-10l-10-30h-10l30-30h-30z" fill="#fff" fill-rule="evenodd" stroke="#fff"/>
         <path id="cloud1" class="hidden" d="M0 30c150 50 120-40 260-10s100-40 260 0 200-10 240 0l40 10V0H0z" fill="#333333" fill-rule="evenodd" stroke="#333333"/>
+        <animate
+           xlink:href="#lightning"
+           attributeName="opacity"
+           from="0"
+           to="1"
+           dur="10s"
+           begin="0s"
+           values="0; 1; 0; 0"
+           keyTimes="0; 0.2; 0.3; 1"
+           repeatCount="indefinite"
+           fill="freeze"
+           id="lightning-anim"/>
       </svg>
     </div>
 
@@ -104,8 +122,8 @@
 
     <script type="text/javascript" src="svg_case_study/svg.js"></script>
     <script src="p5.js"></script>
-    <!-- <script src="../p5.min.js"></script>
-    <script src="../p5.svg.js"></script> -->
+    <!-- <script src="../p5.min.js"></script> -->
+    <!-- <script src="p5.svg.js"></script> -->
 
     <script src="./addons/p5.dom.min.js"></script>
     <script src="./addons/p5.sound.min.js"></script>
