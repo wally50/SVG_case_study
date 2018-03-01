@@ -14,23 +14,47 @@ function jumpBack(evt) {
   evt.target.setAttribute('y', '20');
 }
 
-const r2 = document.querySelector('#range2').classList.remove("yellow");
+function myTimer1() {
+  console.log('3 sec timer on');
+  document.querySelector('#range3').classList.add("yellow");
+  }
+
+function myTimer2() {
+  console.log(' .5 sec timer on');
+  document.querySelector('#range3').classList.remove("yellow");
+}
+
+var flashing = function() {
+  var myVar1 = setInterval(myTimer1(), 3000);
+
+    // myTimer1();
+    var myVar2 = setInterval(myTimer2(), 1000);
+
+    // myTimer2();
+};
+
+
 const r3 = document.querySelector('#range3').classList.remove("yellow");
-const r4 = document.querySelector('#range4').classList.remove("yellow");
+// const r4 = document.querySelector('#range4').classList.remove("yellow");
 const r5 = document.querySelector('#range5').classList.remove("yellow");
 const r6 = document.querySelector('#range6').classList.remove("yellow");
+const rain = document.querySelector('#rain').classList.remove("yellow");
 
 function makeLightning() {
   document.querySelector('#lightning').classList.toggle("hidden");
   document.querySelector('#cloud1').classList.toggle("hidden");
   document.querySelector('#cloud2').classList.toggle("hidden");
   document.querySelector('#cloud3').classList.toggle("hidden");
+  document.querySelector('#rain').classList.toggle("hidden");
 
-  const r2 = document.querySelector('#range2').classList.toggle("yellow");
-  const r3 = document.querySelector('#range3').classList.toggle("yellow");
-  const r4 = document.querySelector('#range4').classList.toggle("yellow");
-  const r5 = document.querySelector('#range5').classList.toggle("yellow");
-  const r6 = document.querySelector('#range6').classList.toggle("yellow");
+  // const r3 = document.querySelector('#range3').classList.toggle("yellow");
+  // // const r4 = document.querySelector('#range4').classList.toggle("yellow");
+  // const r5 = document.querySelector('#range5').classList.toggle("yellow");
+  // const r6 = document.querySelector('#range6').classList.toggle("yellow");
+
+  flashing();
+
+}
 
   // r2.style.fill= '#ffffd8';
   // r3.style.fill= '#ffffd8';
@@ -38,11 +62,11 @@ function makeLightning() {
   // r5.style.fill= '#ffffd8';
   // r6.style.fill= '#ffffd8';
 
-}
-//   var myVar = setInterval(myTimer, 1000);
-//   function myTimer() {
-//
-//   }
+
+  // var myVar = setInterval(myTimer, 1000);
+  // function myTimer() {
+  //
+  // }
 // }
 //
 // onclick=clearInterval(myVar)
