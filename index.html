@@ -163,10 +163,10 @@
         </defs>
         <circle id="sun" cx="695" cy="166.792" r="15" fill="#ffdd55" stroke="#ffdd55" transform="translate(0 -111.792)" style="filter: url(#blurFilter7);"/>
         <path id="cloud3" class="hidden" d="M0 0v660h800V0z" fill="#808080" fill-rule="evenodd" stroke="#808080"/>
-        <path id="range6" class="yellow" d="M0 470c360-70 420-90 570-80s70 0 150 10l80 10v290H0z" fill="#e6e6e6" fill-rule="evenodd" stroke="#e6e6e6"/>
-        <path id="range5" class="yellow" d="M0 440c80-90 240-90 420-40s150 40 180 50 200 60 200 60v190H0V440z" fill="#ccc" fill-rule="evenodd" stroke="#ccc"/>
+        <path id="range6" class="yellow6" d="M0 470c360-70 420-90 570-80s70 0 150 10l80 10v290H0z" fill="#e6e6e6" fill-rule="evenodd" stroke="#e6e6e6"/>
+        <path id="range5" class="yellow5" d="M0 440c80-90 240-90 420-40s150 40 180 50 200 60 200 60v190H0V440z" fill="#ccc" fill-rule="evenodd" stroke="#ccc"/>
         <path id="range4"  d="M0 460c120-80 120-60 200-30s80 40 180 10 80-70 170-60 50 30 150 50l100 20v250H0z" fill="#b3b3b3" fill-rule="evenodd" stroke="#b3b3b3"/>
-        <path id="range3" class="yellow" d="M0 510c390-160 800 0 800 0v190H0z" fill="#999" fill-rule="evenodd" stroke="#999"/>
+        <path id="range3" class="yellow3" d="M0 510c390-160 800 0 800 0v190H0z" fill="#999" fill-rule="evenodd" stroke="#999"/>
         <path id="range2"  d="M0 520c140-50 170-140 240-60s140 50 230-10 330 30 330 30v220H0V520z" fill="#666" fill-rule="evenodd" stroke="#666"/>
         <path id="range1" d="M0 500c30-100 80-60 110-10s70 70 130 10 40-80 170 0 150-50 260-60 130 40 130 40v220H0V500z" fill="#333" fill-rule="evenodd" stroke="#333"/>
         <path id="cloud2" class="hidden" d="M0 90c290 60 290-20 460 10s340-20 340-20V0H0z" fill="#666666" fill-rule="evenodd" stroke="#666666"/>
@@ -174,17 +174,53 @@
         <path id="rain" class="hidden yellow" d="M110 30L60 270M180 60L80 420m200-170L170 580M290 30l-70 250M430 80l-90 270m320-160L550 500m-60-260l-90 300m-50-150l-70 240m320-510l-30 100" fill="#f9f9f9" stroke="#f9f9f9"/>
         <path id="cloud1" class="hidden" d="M0 30c150 50 120-40 260-10s100-40 260 0 200-10 240 0l40 10V0H0z" fill="#333333" fill-rule="evenodd" stroke="#333333"/>
         <animate
-           xlink:href="#lightning"
-           attributeName="opacity"
-           from="0"
-           to="1"
-           dur="7s"
-           begin="0s"
-           values="0; 1; 0; 0"
-           keyTimes="0; 0.2; 0.3; 1"
-           repeatCount="indefinite"
-           fill="freeze"
-           id="lightning-anim"/>
+          xlink:href="#lightning"
+          attributeName="opacity"
+          from="0"
+          to="1"
+          dur="7s"
+          begin="0s"
+          values="0; 1; 0; 0"
+          keyTimes="0; 0.2; 0.3; 1"
+          repeatCount="indefinite"
+          fill="freeze"
+          id="lightning-anim"/>
+        <animate
+          xlink:href=".yellow6"
+          attributeName="fill"
+          from="#e6e6e6"
+          to="#ffffd8"
+          dur="7s"
+          begin="0s"
+          values="#e6e6e6; #ffffd8; #e6e6e6"
+          keyTimes="0; 0.1; 1"
+          repeatCount="indefinite"
+          fill="freeze"
+          id="lightning6-anim"/>
+        <animate
+          xlink:href=".yellow5"
+          attributeName="fill"
+          from="#e6e6e6"
+          to="#ffffd8"
+          dur="4.5s"
+          begin="0s"
+          values="#e6e6e6; #ffffd8; #e6e6e6"
+          keyTimes="0; 0.1; 1"
+          repeatCount="indefinite"
+          fill="freeze"
+          id="lightning5-anim"/>
+          <animate
+            xlink:href=".yellow4"
+            attributeName="fill"
+            from="#e6e6e6"
+            to="#ffffd8"
+            dur="3s"
+            begin="0s"
+            values="#e6e6e6; #ffffd8; #e6e6e6"
+            keyTimes="0; 0.1; 1"
+            repeatCount="indefinite"
+            fill="freeze"
+            id="lightning3-anim"/>
       </svg>
       <h3>Individual elements created on Inkscape vector graphics editor,</h3>
       <h3>passed through SVGOMG to simplify path strings,</h3>

@@ -14,30 +14,26 @@ function jumpBack(evt) {
   evt.target.setAttribute('y', '20');
 }
 
-function myTimer1() {
-  console.log('3 sec timer on');
-  document.querySelector('#range3').classList.add("yellow");
-  }
-
-function myTimer2() {
-  console.log(' .5 sec timer on');
-  document.querySelector('#range3').classList.remove("yellow");
-}
-
-var flashing = function() {
-  var myVar1 = setInterval(myTimer1(), 3000);
-
-    // myTimer1();
-    var myVar2 = setInterval(myTimer2(), 1000);
-
-    // myTimer2();
-};
+// function myTimer1() {
+//   console.log('3 sec timer on');
+//   document.querySelector('#range3').classList.add("yellow");
+// }
+//
+// function myTimer2() {
+//   console.log(' 1 sec timer on');
+//   document.querySelector('#range3').classList.remove("yellow");
+// }
+//
+// var flashing = function() {
+//   var myVar1 = setInterval(myTimer1(), 3000);
+//     var myVar2 = setInterval(myTimer2(), 1000);
+// };
 
 
-const r3 = document.querySelector('#range3').classList.remove("yellow");
+const r3 = document.querySelector('#range3').classList.remove("yellow3");
 // const r4 = document.querySelector('#range4').classList.remove("yellow");
-const r5 = document.querySelector('#range5').classList.remove("yellow");
-const r6 = document.querySelector('#range6').classList.remove("yellow");
+const r5 = document.querySelector('#range5').classList.remove("yellow5");
+const r6 = document.querySelector('#range6').classList.remove("yellow6");
 const rain = document.querySelector('#rain').classList.remove("yellow");
 
 function makeLightning() {
@@ -47,12 +43,12 @@ function makeLightning() {
   document.querySelector('#cloud3').classList.toggle("hidden");
   document.querySelector('#rain').classList.toggle("hidden");
 
-  // const r3 = document.querySelector('#range3').classList.toggle("yellow");
-  // // const r4 = document.querySelector('#range4').classList.toggle("yellow");
-  // const r5 = document.querySelector('#range5').classList.toggle("yellow");
-  // const r6 = document.querySelector('#range6').classList.toggle("yellow");
+  const r3 = document.querySelector('#range3').classList.toggle("yellow3");
+  // const r4 = document.querySelector('#range4').classList.toggle("yellow");
+  const r5 = document.querySelector('#range5').classList.toggle("yellow5");
+  const r6 = document.querySelector('#range6').classList.toggle("yellow6");
 
-  flashing();
+  // flashing();
 
 }
 
