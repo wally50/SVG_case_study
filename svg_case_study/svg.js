@@ -22,7 +22,7 @@ function makeLightning() {
   document.querySelector('#range3mask').classList.toggle("hidden");
   document.querySelector('#range5mask').classList.toggle("hidden");
   document.querySelector('#range6mask').classList.toggle("hidden");
-  
+
   document.querySelector('#lightning3').classList.toggle("hidden");
   document.querySelector('#lightning5').classList.toggle("hidden");
   document.querySelector('#lightning6').classList.toggle("hidden");
@@ -30,6 +30,8 @@ function makeLightning() {
   document.querySelector('#cloud1').classList.toggle("hidden");
   document.querySelector('#cloud2').classList.toggle("hidden");
   document.querySelector('#cloud3').classList.toggle("hidden");
+
+  document.querySelector('#shadow_cloud').classList.toggle("hidden");
 
   document.querySelector('#rain').classList.toggle("hidden");
 
