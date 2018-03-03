@@ -51,7 +51,7 @@ div {
 }
 
 .svg8 {
-  border: 3px solid gold;
+  border: 6px solid gold;
   height: 660px;
   background-color: #c9e9f6;
 }
@@ -92,15 +92,22 @@ div {
 #range6:hover {
   fill: violet;
 }
+#range3mask:hover {
+  fill: yellow;
+}
+
+#range5mask:hover {
+  fill: indigo;
+}
+
+#range6mask:hover {
+  fill: violet;
+}
+
 
 .hidden {
   display: none;
 }
-
-.yellow {
-  fill: #ffffd8;
-}
-
 
 h4 {
   color: red;

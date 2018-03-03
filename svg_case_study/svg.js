@@ -1,5 +1,5 @@
 var MakeTransparent = function(evt) {
-  evt.target.setAttributeNS(null,"opacity","0.3");
+  evt.target.setAttributeNS(null,"opacity","0.6");
 }
 
 var MakeOpaque = function(evt) {
@@ -14,72 +14,31 @@ function jumpBack(evt) {
   evt.target.setAttribute('y', '20');
 }
 
-// function myTimer1() {
-//   console.log('3 sec timer on');
-//   document.querySelector('#range3').classList.add("yellow");
-// }
-//
-// function myTimer2() {
-//   console.log(' 1 sec timer on');
-//   document.querySelector('#range3').classList.remove("yellow");
-// }
-//
-// var flashing = function() {
-//   var myVar1 = setInterval(myTimer1(), 3000);
-//     var myVar2 = setInterval(myTimer2(), 1000);
-// };
-
-
-const r3 = document.querySelector('#range3').classList.remove("yellow3");
-// const r4 = document.querySelector('#range4').classList.remove("yellow");
-const r5 = document.querySelector('#range5').classList.remove("yellow5");
-const r6 = document.querySelector('#range6').classList.remove("yellow6");
-const rain = document.querySelector('#rain').classList.remove("yellow");
+const r4 = document.querySelector('#range3mask').classList.remove("hidden");
+const r5 = document.querySelector('#range5mask').classList.remove("hidden");
+const r6 = document.querySelector('#range6mask').classList.remove("hidden");
 
 function makeLightning() {
-  document.querySelector('#lightning').classList.toggle("hidden");
+  document.querySelector('#range3mask').classList.toggle("hidden");
+  document.querySelector('#range5mask').classList.toggle("hidden");
+  document.querySelector('#range6mask').classList.toggle("hidden");
+  
+  document.querySelector('#lightning3').classList.toggle("hidden");
+  document.querySelector('#lightning5').classList.toggle("hidden");
+  document.querySelector('#lightning6').classList.toggle("hidden");
+
   document.querySelector('#cloud1').classList.toggle("hidden");
   document.querySelector('#cloud2').classList.toggle("hidden");
   document.querySelector('#cloud3').classList.toggle("hidden");
+
   document.querySelector('#rain').classList.toggle("hidden");
-
-  const r3 = document.querySelector('#range3').classList.toggle("yellow3");
-  // const r4 = document.querySelector('#range4').classList.toggle("yellow");
-  const r5 = document.querySelector('#range5').classList.toggle("yellow5");
-  const r6 = document.querySelector('#range6').classList.toggle("yellow6");
-
-  // flashing();
 
 }
 
-  // r2.style.fill= '#ffffd8';
-  // r3.style.fill= '#ffffd8';
-  // r4.style.fill= '#ffffd8';
-  // r5.style.fill= '#ffffd8';
-  // r6.style.fill= '#ffffd8';
-
-
-  // var myVar = setInterval(myTimer, 1000);
-  // function myTimer() {
-  //
-  // }
-// }
-//
-// onclick=clearInterval(myVar)
 
 
 
 
-
-
-
-// function keyPressed(evt) {
-//   if (keyCode === LEFT_ARROW) {
-//     evt.target.setAttribute('fill', 'red');
-//   } else if (keyCode === RIGHT_ARROW) {
-//     value = 0;
-//   }
-// }
 
 
 
